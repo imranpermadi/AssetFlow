@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCEPTED" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="ACCEPT_ORDER" xml:space="preserve">
+    <value>Accept Order</value>
+  </data>
+  <data name="ADD_TO_SHIPMENT" xml:space="preserve">
+    <value>Add to Shipment</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="APPOINTMENT" xml:space="preserve">
+    <value>Appointment</value>
+  </data>
+  <data name="APPOINTMENT_APPROVAL_DATE" xml:space="preserve">
+    <value>Appointment Approval Date</value>
+  </data>
+  <data name="APPOINTMENT_DATE" xml:space="preserve">
+    <value>Appointment Date</value>
+  </data>
+  <data name="APPOINTMENT_STATUS" xml:space="preserve">
+    <value>Appointment Status</value>
+  </data>
+  <data name="APPOINTMENT_TIME" xml:space="preserve">
+    <value>Appointment Time</value>
+  </data>
+  <data name="APPROVAL_MATRIX" xml:space="preserve">
+    <value>Approval Matrix</value>
+  </data>
+  <data name="ASSIGNED_TO_TRANSPORTER" xml:space="preserve">
+    <value>Assigned to Transporter</value>
+  </data>
+  <data name="ASSIGN_DRIVER" xml:space="preserve">
+    <value>Assign Driver&amp;Truck</value>
+  </data>
+  <data name="ASSIGN_QTY" xml:space="preserve">
+    <value>Assign Qty</value>
+  </data>
+  <data name="ASSIGN_REASON" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="ASSIGN_REASON_OTHERS" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASSIGN_TRANSPORTER" xml:space="preserve">
+    <value>Assign Transporter</value>
+  </data>
+  <data name="AUTO_REJECT_DATE" xml:space="preserve">
+    <value>Auto Reject Date</value>
+  </data>
+  <data name="BUSINESS_SEGMENT" xml:space="preserve">
+    <value>Product Category</value>
+  </data>
+  <data name="CANCEL_SHIPMENT" xml:space="preserve">
+    <value>Cancel Shipment</value>
+  </data>
+  <data name="CHANGE_PASSWORD" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="CHARGE_OA_COMPANY" xml:space="preserve">
+    <value>Charge OA Company</value>
+  </data>
+  <data name="COLLECTIVE_LN" xml:space="preserve">
+    <value>Collective LN</value>
+  </data>
+  <data name="COMPANY" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="COMPLETED" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="COMPLETED_DATE" xml:space="preserve">
+    <value>Completed Date</value>
+  </data>
+  <data name="COMPLETE_ORDER" xml:space="preserve">
+    <value>Complete order</value>
+  </data>
+  <data name="CONFIRM_PASSWORD" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="CONVERTED" xml:space="preserve">
+    <value>Converted</value>
+  </data>
+  <data name="COPY_ORDER" xml:space="preserve">
+    <value>Copy Order</value>
+  </data>
+  <data name="CREATE" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="CREATED_BY" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="CREATED_DATE" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="CREATE_APPOINTMENT" xml:space="preserve">
+    <value>Create Appointment</value>
+  </data>
+  <data name="CURRENCY" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="CURRENT_PASSWORD" xml:space="preserve">
+    <value>Current Password</value>
+  </data>
+  <data name="CUSTOMER" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="CUSTOMER_VENDOR" xml:space="preserve">
+    <value>Customer/Vendor</value>
+  </data>
+  <data name="CUSTOMER_VENDOR_ADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="DELETED_BY" xml:space="preserve">
+    <value>Deleted By</value>
+  </data>
+  <data name="DELETED_DATE" xml:space="preserve">
+    <value>Deleted Date</value>
+  </data>
+  <data name="DELIVERY_ADDRESS" xml:space="preserve">
+    <value>Delivery Address</value>
+  </data>
+  <data name="DELIVERY_ORDER_NO" xml:space="preserve">
+    <value>Delivery Order No</value>
+  </data>
+  <data name="DELIVERY_QTY" xml:space="preserve">
+    <value>Delivery Qty</value>
+  </data>
+  <data name="DELIVERY_UOM" xml:space="preserve">
+    <value>Delivery UOM</value>
+  </data>
+  <data name="DESTINATION" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="DISTRIBUTION" xml:space="preserve">
+    <value>Distribution</value>
+  </data>
+  <data name="DOC_DATE" xml:space="preserve">
+    <value>Doc. Date</value>
+  </data>
+  <data name="DOC_NO" xml:space="preserve">
+    <value>Doc. No</value>
+  </data>
+  <data name="DOC_TYPE" xml:space="preserve">
+    <value>Doc. Type</value>
+  </data>
+  <data name="DRIVER" xml:space="preserve">
+    <value>Driver</value>
+  </data>
+  <data name="EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EDITED_BY" xml:space="preserve">
+    <value>Edited By</value>
+  </data>
+  <data name="EDITED_DATE" xml:space="preserve">
+    <value>Edited Date</value>
+  </data>
+  <data name="EDIT_APPOINTMENT" xml:space="preserve">
+    <value>Edit Appointment</value>
+  </data>
+  <data name="EDIT_ORDER" xml:space="preserve">
+    <value>Edit Order</value>
+  </data>
+  <data name="EDIT_SHIPMENT" xml:space="preserve">
+    <value>Edit Shipment</value>
+  </data>
+  <data name="ESTATE" xml:space="preserve">
+    <value>Estate</value>
+  </data>
+  <data name="FACTORY" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="FORM_MODE_CREATE" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="FORM_MODE_DISPATCH" xml:space="preserve">
+    <value>Assign to Transporter</value>
+  </data>
+  <data name="FREIGHT_APPROVAL_PER_UOM" xml:space="preserve">
+    <value>Per / UOM</value>
+  </data>
+  <data name="FREIGHT_BEST_PRICE" xml:space="preserve">
+    <value>Total Biaya Best Price</value>
+  </data>
+  <data name="FREIGHT_BEST_PRICE_PER_UOM" xml:space="preserve">
+    <value>Best Price/UOM</value>
+  </data>
+  <data name="FREIGHT_CONTAINER" xml:space="preserve">
+    <value>Number of Trips/UOM</value>
+  </data>
+  <data name="FREIGHT_COST" xml:space="preserve">
+    <value>Freight Cost</value>
+  </data>
+  <data name="FREIGHT_COST_PER" xml:space="preserve">
+    <value>Freight Cost Per</value>
+  </data>
+  <data name="FREIGHT_COST_SELECTED" xml:space="preserve">
+    <value>Selected Freight Cost</value>
+  </data>
+  <data name="FREIGHT_COST_SUGGESTED" xml:space="preserve">
+    <value>Suggested Freight Cost</value>
+  </data>
+  <data name="FREIGHT_COST_UOM" xml:space="preserve">
+    <value>Freight Cost UOM</value>
+  </data>
+  <data name="FREIGHT_DIFFERENT_PERCENTAGE" xml:space="preserve">
+    <value>Percentage Different</value>
+  </data>
+  <data name="FREIGHT_DIFFERENT_PER_UOM" xml:space="preserve">
+    <value>Different Per UOM</value>
+  </data>
+  <data name="FREIGHT_KG" xml:space="preserve">
+    <value>RP/KG (Based Qty)</value>
+  </data>
+  <data name="FREIGHT_KG_BASED" xml:space="preserve">
+    <value>RP/KG (Based Capacity)</value>
+  </data>
+  <data name="FREIGHT_MASTER" xml:space="preserve">
+    <value>Freight (Master Data)</value>
+  </data>
+  <data name="FREIGHT_TOTAL_COST" xml:space="preserve">
+    <value>Est. Total Biaya Pengiriman</value>
+  </data>
+  <data name="FREIGHT_TOTAL_COST_USER" xml:space="preserve">
+    <value>Total Biaya Pengiriman</value>
+  </data>
+  <data name="FREIGHT_TOTAL_DIFFERENT" xml:space="preserve">
+    <value>Total Different</value>
+  </data>
+  <data name="GENERATE_QR" xml:space="preserve">
+    <value>Generate QR</value>
+  </data>
+  <data name="INCOTERM" xml:space="preserve">
+    <value>Incoterm</value>
+  </data>
+  <data name="INCOTERM2" xml:space="preserve">
+    <value>Incoterm2</value>
+  </data>
+  <data name="INVALID" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="INVALID_DATE" xml:space="preserve">
+    <value>Invalid Date</value>
+  </data>
+  <data name="IN_PROGRESS" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="ITEM_NO" xml:space="preserve">
+    <value>Item No</value>
+  </data>
+  <data name="LICENSE_NO" xml:space="preserve">
+    <value>No. SIM</value>
+  </data>
+  <data name="LN_DO_THIRD_PARTY" xml:space="preserve">
+    <value>LN DO 3rdParty</value>
+  </data>
+  <data name="LN_SO_ITEM_NO" xml:space="preserve">
+    <value>LN SO Item No</value>
+  </data>
+  <data name="LN_SO_NO" xml:space="preserve">
+    <value>LN SO No</value>
+  </data>
+  <data name="LN_STO_ITEM_NO" xml:space="preserve">
+    <value>LN STO Item No</value>
+  </data>
+  <data name="LN_STO_NO" xml:space="preserve">
+    <value>LN STO No</value>
+  </data>
+  <data name="LOADING" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="LOCK_FLAG" xml:space="preserve">
+    <value>Lock Flag</value>
+  </data>
+  <data name="MANUAL_ORDER" xml:space="preserve">
+    <value>Manual Order</value>
+  </data>
+  <data name="MANUAL_ORDER_SAP_NO" xml:space="preserve">
+    <value>Manual Order SAP No</value>
+  </data>
+  <data name="MARK_COMPLETE" xml:space="preserve">
+    <value>Mark Complete</value>
+  </data>
+  <data name="MARK_COMPLETE_QTY" xml:space="preserve">
+    <value>Mark Complete Qty</value>
+  </data>
+  <data name="MATERIAL" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="MATERIAL_NAME" xml:space="preserve">
+    <value>Material Name</value>
+  </data>
+  <data name="MAX_QTY" xml:space="preserve">
+    <value>Max Qty</value>
+  </data>
+  <data name="MERGE" xml:space="preserve">
+    <value>Merge</value>
+  </data>
+  <data name="MERGE_ORDER" xml:space="preserve">
+    <value>Merge Order</value>
+  </data>
+  <data name="NEW" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="NEW_PASSWORD" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="NUMBER_OF_TRIP" xml:space="preserve">
+    <value>Number of Trips/UOM</value>
+  </data>
+  <data name="NUM_TRIP" xml:space="preserve">
+    <value>Number of Trips</value>
+  </data>
+  <data name="ORDER" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="ORDER_ITEM_NO" xml:space="preserve">
+    <value>Order Item No</value>
+  </data>
+  <data name="ORDER_NO" xml:space="preserve">
+    <value>Order No</value>
+  </data>
+  <data name="ORDER_SHIPMENT_VALID_DATE" xml:space="preserve">
+    <value>Tanggal Berlaku Order/Shipment</value>
+  </data>
+  <data name="ORDER_TYPE" xml:space="preserve">
+    <value>Order Type</value>
+  </data>
+  <data name="OUTSTANDING" xml:space="preserve">
+    <value>Outstanding</value>
+  </data>
+  <data name="OUTSTANDING_QTY" xml:space="preserve">
+    <value>Outstanding Qty</value>
+  </data>
+  <data name="PER DAY" xml:space="preserve">
+    <value>Per Day</value>
+  </data>
+  <data name="PER MONTH" xml:space="preserve">
+    <value>Per Month</value>
+  </data>
+  <data name="PLANT" xml:space="preserve">
+    <value>Plant</value>
+  </data>
+  <data name="POD" xml:space="preserve">
+    <value>ePOD</value>
+  </data>
+  <data name="POD_CATEGORY" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="POD_QTY" xml:space="preserve">
+    <value>POD Qty</value>
+  </data>
+  <data name="POD_REMARKS" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="POD_RETURN_QTY" xml:space="preserve">
+    <value>Return Qty</value>
+  </data>
+  <data name="POD_TITLE" xml:space="preserve">
+    <value>Proof of Delivery</value>
+  </data>
+  <data name="PO_INTERCO" xml:space="preserve">
+    <value>PO Interco</value>
+  </data>
+  <data name="PO_NO" xml:space="preserve">
+    <value>PO No</value>
+  </data>
+  <data name="PO_SO_NO" xml:space="preserve">
+    <value>PO SO</value>
+  </data>
+  <data name="PROGRESS_STATUS" xml:space="preserve">
+    <value>Progress Status</value>
+  </data>
+  <data name="PUR_ORG" xml:space="preserve">
+    <value>Pur. Organization</value>
+  </data>
+  <data name="PUR_SALES_ORG" xml:space="preserve">
+    <value>Pur / Sales Org.</value>
+  </data>
+  <data name="QTY" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="QTY_ORDER" xml:space="preserve">
+    <value>Qty Order</value>
+  </data>
+  <data name="QTY_SHIPMENT" xml:space="preserve">
+    <value>Qty Shipment</value>
+  </data>
+  <data name="REAL_QTY" xml:space="preserve">
+    <value>Realization Qty</value>
+  </data>
+  <data name="REASON" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="RECEIVE_QTY" xml:space="preserve">
+    <value>Receive Qty</value>
+  </data>
+  <data name="RECEIVE_UOM" xml:space="preserve">
+    <value>Receive UOM</value>
+  </data>
+  <data name="REGISTRATION_DATE" xml:space="preserve">
+    <value>Tanggal Registrasi</value>
+  </data>
+  <data name="REJECTED" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="REJECT_ORDER" xml:space="preserve">
+    <value>Reject Order</value>
+  </data>
+  <data name="REMAINING_SLOT" xml:space="preserve">
+    <value>Remaining Slot</value>
+  </data>
+  <data name="REMARKS" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="REPORT_DATE" xml:space="preserve">
+    <value>Report Date</value>
+  </data>
+  <data name="REPORT_GENERATE_DATE" xml:space="preserve">
+    <value>Generate Date</value>
+  </data>
+  <data name="RETURN_SHIPMENT" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="REVERT_QTY" xml:space="preserve">
+    <value>Revert Qty</value>
+  </data>
+  <data name="SALES_ORG" xml:space="preserve">
+    <value>Sales Organization</value>
+  </data>
+  <data name="SAP_ITEM_NO" xml:space="preserve">
+    <value>SAP Item No.</value>
+  </data>
+  <data name="SAP_NO" xml:space="preserve">
+    <value>SAP Order No</value>
+  </data>
+  <data name="SELECT_SHIPMENT" xml:space="preserve">
+    <value>Select Shipment</value>
+  </data>
+  <data name="SELECT_TRANSPORTER" xml:space="preserve">
+    <value>Select Transporter</value>
+  </data>
+  <data name="SHIPMENT" xml:space="preserve">
+    <value>Shipment</value>
+  </data>
+  <data name="SHIPMENT_NO" xml:space="preserve">
+    <value>Shipment No</value>
+  </data>
+  <data name="SHIPMENT_TYPE" xml:space="preserve">
+    <value>Shipment Type</value>
+  </data>
+  <data name="SHOW_DRIVER_TRACKING" xml:space="preserve">
+    <value>Show Driver Tracking</value>
+  </data>
+  <data name="SHOW_STATUS_HISTORY" xml:space="preserve">
+    <value>Show Status History</value>
+  </data>
+  <data name="SLOT_NAME" xml:space="preserve">
+    <value>Slot Name</value>
+  </data>
+  <data name="SO_DO_NO" xml:space="preserve">
+    <value>SO of DO No</value>
+  </data>
+  <data name="SO_INTERCO" xml:space="preserve">
+    <value>SO Interco</value>
+  </data>
+  <data name="SO_INTERCO_ITEM" xml:space="preserve">
+    <value>SO Interco Item</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="STUFFING_DATE" xml:space="preserve">
+    <value>Stuffing Date</value>
+  </data>
+  <data name="SYSTEM_NOT" xml:space="preserve">
+    <value>No. Trips Based Capacity</value>
+  </data>
+  <data name="TIME_END" xml:space="preserve">
+    <value>Time End</value>
+  </data>
+  <data name="TIME_START" xml:space="preserve">
+    <value>Time Start</value>
+  </data>
+  <data name="TOLERANCE" xml:space="preserve">
+    <value>Tolerance</value>
+  </data>
+  <data name="TRANSFER_TYPE" xml:space="preserve">
+    <value>Transfer Type</value>
+  </data>
+  <data name="TRANSPORTER" xml:space="preserve">
+    <value>Transporter</value>
+  </data>
+  <data name="TRANSPORTER_ACCEPT_STATUS" xml:space="preserve">
+    <value>Transporter Accept Status</value>
+  </data>
+  <data name="TRANSPORTER_NOTES" xml:space="preserve">
+    <value>Notes to Transporter</value>
+  </data>
+  <data name="TRUCK" xml:space="preserve">
+    <value>Truck</value>
+  </data>
+  <data name="TRUCK_CAPACITY" xml:space="preserve">
+    <value>Kapasitas</value>
+  </data>
+  <data name="TRUCK_TYPE" xml:space="preserve">
+    <value>Truck Type</value>
+  </data>
+  <data name="UNASSIGNED_TRANSPORTER" xml:space="preserve">
+    <value>Unassigned Transporter</value>
+  </data>
+  <data name="UNMARK_COMPLETE" xml:space="preserve">
+    <value>Unmark Complete</value>
+  </data>
+  <data name="UOM" xml:space="preserve">
+    <value>UOM</value>
+  </data>
+  <data name="UPLOAD_FILE" xml:space="preserve">
+    <value>Upload file(s)</value>
+  </data>
+  <data name="USER_NOT" xml:space="preserve">
+    <value>No. Trips by User</value>
+  </data>
+  <data name="VALID_FROM" xml:space="preserve">
+    <value>Valid From</value>
+  </data>
+  <data name="VALID_TO" xml:space="preserve">
+    <value>Valid To</value>
+  </data>
+  <data name="VEHICLE" xml:space="preserve">
+    <value>Truck</value>
+  </data>
+  <data name="VENDOR" xml:space="preserve">
+    <value>Vendor</value>
+  </data>
+  <data name="VIEW_ORDER" xml:space="preserve">
+    <value>View Order</value>
+  </data>
+  <data name="VIEW_POD" xml:space="preserve">
+    <value>View POD</value>
+  </data>
+  <data name="VIEW_SHIPMENTS" xml:space="preserve">
+    <value>View Shipments</value>
+  </data>
+  <data name="VIEW_SHIPMENT_REAL" xml:space="preserve">
+    <value>View Realization</value>
+  </data>
+  <data name="WAITING_FOR_APPROVAL" xml:space="preserve">
+    <value>Waiting for Approval</value>
+  </data>
+  <data name="WAREHOUSE" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="WAREHOUSE_LOCATION" xml:space="preserve">
+    <value>Warehouse Location</value>
+  </data>
+  <data name="WB_TRANS_TYPE" xml:space="preserve">
+    <value>WB Trans Type</value>
+  </data>
+</root>

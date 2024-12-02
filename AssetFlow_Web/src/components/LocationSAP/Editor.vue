@@ -1,0 +1,191 @@
+<template>
+    <form id="mainForm" action="#" method="post">
+        <Card>
+            <template #title>
+                <Toolbar>
+                    <template #left>
+                        <div class="p-card-title">
+                            [{{ mode }}] Location SAP
+                        </div>
+                        <div style="margin-left: 10px" v-if="mode != this.$FORM_MODE_CREATE">
+                            <Button type="button" icon="pi pi-info" @click="toggle" aria:haspopup="true"
+                                aria-controls="overlay_panel" class="p-button-rounded p-button-outlined p-button-sm" />
+
+                            <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" id="overlay_panel"
+                                style="width: 550px" :breakpoints="{ '960px': '80vw' }">
+                                <div class="grid field">
+                                    <div class="row">
+                                        <i class="pi pi-plus-circle" /> {{ this.$formatDateTime(header.CreatedDate) }}
+                                    </div>
+                                    <div class="row">
+                                        &nbsp;by {{ header.CreatedBy }}
+                                    </div>
+                                </div>
+                                <div class="grid field" v-if="header.EditedDate">
+                                    <div class="row">
+                                        <i class="pi pi-pencil" /> {{ this.$formatDateTime(header.EditedDate) }}
+                                    </div>
+                                    <div class="row">
+                                        &nbsp;by {{ header.EditedBy }}
+                                    </div>
+                                </div>
+                                <div class="grid field" v-if="header.DeletedDate">
+                                    <div class="row">
+                                        <i class="pi pi-trash" /> {{ this.$formatDateTime(header.DeletedDate) }}
+                                    </div>
+                                    <div class="row">
+                                        &nbsp;by {{ header.DeletedBy }}
+                                    </div>
+                                </div>
+                            </OverlayPanel>
+                        </div>
+                    </template>
+
+                    <template #right>
+                        <Button icon="pi pi-chevron-left" label="Back" class="p-button mr-2" @click="backToIndex" />
+                        <Button icon="pi pi-save" label="Save" class="p-button-success" @click="confirm($event)"
+                            v-if="mode != this.$FORM_MODE_DELETE && mode != this.$FORM_MODE_VIEW" />
+                        <Button icon="pi pi-trash" label="Delete" class="p-button-danger" @click="confirm($event)"
+                            v-if="mode == this.$FORM_MODE_DELETE" />
+                        <ConfirmPopup></ConfirmPopup>
+                    </template>
+                </Toolbar>
+            </template>
+            <template #content>
+                <div class="p-inputtext-sm p-fluid">
+                    <div class="grid">
+                        <div class="col-6">
+                            <div class="field grid">
+                                <label for="SAPCompanyCode" class="col-4">{{ $t('sap_company_code') }}</label>
+                                <div class="col-8 md-8">
+                                    <InputText name="SAPCompanyCode" v-model="header.SAPCompanyCode" type="text"
+                                        :placeholder="$t('sap_company_code')" v-if="header"
+                                        :class="{ 'p-invalid': submitted && !header.SAPCompanyCode }"
+                                        :disabled="mode != this.$FORM_MODE_CREATE"
+                                        :readonly="mode != this.$FORM_MODE_CREATE" />
+                                    <Skeleton v-else-if="!header" />
+                                    <small
+                                        v-if="header && !header.SAPCompanyCode && submitted && mode != this.$FORM_MODE_DELETE"
+                                        class="p-error">{{ $t('is_required').replace('Value', $t('sap_company_code')) }}
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="field grid">
+                                <label for="Location" class="col-4">{{ $t('location') }}</label>
+                                <div class="col-8 md-8">
+                                    <InputText name="Location" v-model="header.Location" required="true" type="text"
+                                        :placeholder="$t('location')" v-if="header"
+                                        :class="{ 'p-invalid': submitted && !header.Location }"
+                                        :disabled="mode != this.$FORM_MODE_CREATE && mode != this.$FORM_MODE_EDIT" />
+                                    <Skeleton v-else-if="!header" />
+                                    <small
+                                        v-if="header && !header.Location && submitted && mode != this.$FORM_MODE_DELETE"
+                                        class="p-error">{{ $t('is_required').replace('Value', $t('location')) }}
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="field grid">
+                                <label for="Plant" class="col-4">{{ $t('plant') }}</label>
+                                <div class="col-8 md-8">
+                                    <InputText name="Plant" v-model="header.Plant" type="text"
+                                        :placeholder="$t('plant')" v-if="header"
+                                        :disabled="mode != this.$FORM_MODE_CREATE && mode != this.$FORM_MODE_EDIT" />
+                                    <Skeleton v-else-if="!header" />
+                                </div>
+                            </div>
+                            <div class="field grid">
+                                <label for="BA" class="col-4">{{ $t('ba') }}</label>
+                                <div class="col-8 md-8">
+                                    <InputText name="BA" v-model="header.BA" type="text" :placeholder="$t('ba')"
+                                        v-if="header"
+                                        :disabled="mode != this.$FORM_MODE_CREATE && mode != this.$FORM_MODE_EDIT" />
+                                    <Skeleton v-else-if="!header" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </Card>
+    </form>
+</template>
+
+<script>
+export default {
+    name: "Editor",
+    data() {
+        return {
+            indexName: "LocationSAPIndex",
+            url: this.$API_URL + "locationsap/",
+            header: null,
+            mode: "",
+            submitted: false,
+            id: 0,
+        }
+    },
+    methods: {
+        getData() {
+            var self = this;
+            this.$axios.get(this.url + this.id + "/" + this.mode)
+                .then((response) => {
+                    self.header = response.data.data.header;
+                    self.header.mode = self.mode;
+                })
+                .catch(function (error) {
+                    alert(error);
+                });
+        },
+        saveData() {
+            this.$emit('block-ui');
+            var self = this;
+            this.$axios.post(this.url, this.header)
+                .then((response) => {
+                    if (response.data.success) {
+                        self.$router.push({ name: self.indexName, params: { showToast: true, severity: 'success', summary: 'Data Saved', detail: "Location SAP " + self.header.SAPCompanyCode + " has been saved successfully", life: 3000 } });
+                    } else {
+                        self.showError('Error Saving Data', response.data.message);
+                    }
+                })
+                .catch(function (error) {
+                    self.showError('Error Saving Data', error);
+                });
+        },
+        showError(summary, message) {
+            this.$emit('unblock-ui');
+            this.$toast.add({ severity: 'error', summary: summary, detail: message, life: 3000 });
+        },
+        backToIndex() {
+            this.$router.push({ path: "/LocationSAP/Index" });
+        },
+        toggle(event) {
+            this.$refs.op.toggle(event);
+        },
+        confirm(event) {
+            this.submitted = true;
+            if (!this.header.SAPCompanyCode || !this.header.Location) {
+                return;
+            } else {
+                this.$confirm.require({
+                    target: event.currentTarget,
+                    message: 'Are you sure?',
+                    icon: 'pi pi-exclamation-triangle',
+                    accept: () => {
+                        this.saveData();
+                    },
+                    reject: () => { }
+                });
+            }
+        },
+    },
+    created() {
+        this.mode = this.$route.query.mode;
+        this.id = this.$route.query.id ?? 0;
+
+        this.getData();
+    }
+}
+</script>
+
+<style scoped>
+/* Add any specific styles here if needed */
+</style>

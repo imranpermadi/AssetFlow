@@ -1,0 +1,67 @@
+trigger:
+  branches:
+    include:
+    - release
+variables:
+- name: projectName
+  value: 'FAMS'
+- name: projectDirectory
+  value: '$(projectName)_Web'
+- name: appDir
+  value: '$(System.DefaultWorkingDirectory)/$(projectDirectory)/ClientApp/'
+- name: publishDir
+  value: '$(System.DefaultWorkingDirectory)\Publish\build\$(projectDirectory)'
+- name: zipPath
+  value: '$(System.DefaultWorkingDirectory)\Publish\packages'
+- name: zipFileName
+  value: 'output-web-prd.zip'
+- name: npm_config_cache
+  value: $(Pipeline.Workspace)/.npm
+- name: sourceBranch
+  value: $[replace(variables['Build.SourceBranch'], 'refs/heads/', '')]
+stages:
+- stage: __default
+  jobs:
+  - job: Job
+    pool:
+      name: 'FAOAgentPool'
+    steps:
+    - task: Cache@2
+      inputs:
+        key: 'npm | "$(Agent.OS)" | $(appDir)\package-lock.json'
+        restoreKeys: |
+          npm | "$(Agent.OS)"
+        path: $(npm_config_cache)
+      displayName: 'Cache NPM'
+    - task: Npm@1
+      displayName: 'NPM Set progress false (speedup)'
+      inputs:
+        command: custom
+        verbose: false
+        workingDir: '$(appDir)'
+        customCommand: 'set progress=false'
+    - task: Npm@1
+      displayName: 'NPM Install Dependencies'
+      inputs:
+        command: custom
+        verbose: false
+        workingDir: '$(appDir)'
+        customCommand: 'ci --cache $(npm_config_cache)'
+    - task: Npm@1
+      inputs:
+        command: 'custom'
+        workingDir: '$(appDir)'
+        customCommand: 'run prd -- --dest "$(publishDir)"'
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: '$(publishDir)'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(zipPath)/$(zipFileName)'
+        replaceExistingArchive: true
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(zipPath)'
+        artifact: 'output-$(sourceBranch)'
+        publishLocation: 'pipeline'
+

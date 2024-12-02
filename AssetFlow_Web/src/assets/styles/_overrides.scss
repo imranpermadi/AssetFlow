@@ -1,0 +1,140 @@
+.p-card .p-card-body{
+    padding: 0.5rem;
+}
+
+.p-toolbar{
+    padding: 0.5rem;
+}
+
+.p-button.p-button-icon-only.p-button-rounded {
+    height: 2rem!important;
+}
+
+.p-button.p-button-icon-only {
+    width: 2rem!important;
+}
+
+// .p-datatable.p-datatable-sm .p-datatable-thead > tr > th {
+//     padding: 0.3rem 0.5rem;
+// }
+
+// .p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
+//     padding: 0.3rem 0.5rem;
+// }
+
+.p-message .p-message-wrapper {
+    padding: 0.5rem 1rem;
+}
+
+.p-message{
+    margin: 0!important;
+}
+
+.nowrap{
+    white-space:nowrap;
+}
+
+
+
+.p-field{
+    padding:1em;
+}
+
+.field{
+    margin-bottom:0.5em !important;
+}
+
+.grid{
+    margin-top: 0 !important;
+}
+
+.w-screen-70{
+    width:70vw!important;
+}
+.w-screen-50{
+    width:50vw!important;
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+    content: "Y";
+    text-align: center;
+}
+
+.p-inputswitch .p-inputswitch-slider:before {
+    content: "N";
+    text-align: center;
+}
+
+.p-fileupload .p-fileupload-row > div {
+    padding: 0.25rem 0.25rem !important;
+}
+
+.row-hidden {
+    display:none!important;
+}
+
+.row-unauthorized {
+    background-color:#FF7669!important;
+}
+
+.current-approval {
+    color: red!important;
+}
+
+.p-datatable.p-datatable-sm .p-datatable-tbody > tr > td{
+    white-space:pre;
+}
+
+// .p-datatable-tbody > tr > td{
+//     white-space:nowrap;
+// }
+
+.pre{
+    white-space:pre!important;
+}
+
+.pre-line{
+    white-space:pre-line !important;
+}
+
+.topbar-display-name{
+    width:100% !important;
+    cursor: default!important;
+    color:var(--text-color)!important;
+    text-align:right!important;
+}
+
+.topbar-display-name:hover{
+    background-color: transparent!important;
+}
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+    background: #d0d1fb!important;
+  }
+  .p-datatable .p-datatable-tbody > tr.p-datatable-dragpoint-top > td {
+    box-shadow: inset 0 2px 0 0 #d0d1fb !important;
+  }
+  .p-datatable .p-datatable-tbody > tr.p-datatable-dragpoint-bottom > td {
+    box-shadow: inset 0 -2px 0 0 #d0d1fb !important; 
+  }
+
+.selected-transporter{
+    background: #ffe699 !important;
+}
+
+.layout-main{
+    min-height: calc(100vh - 10rem)!important;
+}
+
+.p-disabled{
+    color: black!important;
+}
+
+
+.p-disabled .p-dropdown-label.p-placeholder{
+    color: black!important;
+}
+
+.appointment-slot-disabled {
+    background-color: #F18F6F!important;
+}

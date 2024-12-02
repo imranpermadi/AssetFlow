@@ -1,0 +1,94 @@
+
+.login-body {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-body .login-panel {
+    width: 565px;
+    height: 510px;
+    background-color: rgba(255, 255, 255, 0.90);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -287px;
+    margin-top: -252px;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 12px 17px 2px rgba(0, 0, 0, 0.14);
+}
+
+.login-body .login-panel .login-panel-header {
+    text-align: center;
+    vertical-align: middle;
+    width: 108px;
+    height: 108px;
+    position: relative;
+    top: -54px;
+    left: 50%;
+    margin-left: -54px;
+    background: #fafafa;
+    border: 10px solid #fafafa;
+    border-radius: 50%;
+}
+
+.login-body .login-panel .login-panel-header img {
+    max-width:100%;
+    max-height:100%;
+    margin-top: 27px;
+    mix-blend-mode:multiply;
+}
+
+.login-body .login-panel .login-panel-content {
+    padding: 12px 68px;
+    position: relative;
+    top: -54px;
+}
+
+.login-body .login-panel .login-panel-content h1 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    color: #616161;
+    margin-top: 0;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.login-body .login-panel .login-panel-content .p-col-6, .login-body .login-panel .login-panel-content .col-12 {
+    padding: 1em;
+}
+
+.login-body .login-panel .login-panel-content h2 {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: #212121;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.login-body .login-panel .login-panel-content button.p-link {
+    color: #457fca;
+    font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 14px;
+}
+
+.login-body .login-panel .login-panel-content .p-col-12, .login-body .login-panel .login-panel-content .col-6 {
+    padding: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    .login-body .login-panel {
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .login-body .login-panel .login-panel-content {
+        padding: 12px 28px;
+    }
+}

@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APPOINTMENT_APPROVAL_EXPIRED" xml:space="preserve">
+    <value>Unable to approve an expired appointment</value>
+  </data>
+  <data name="APPOINTMENT_DATE_REQUIRED" xml:space="preserve">
+    <value>Appointment Date is required</value>
+  </data>
+  <data name="APPOINTMENT_SLOT_REQUIRED" xml:space="preserve">
+    <value>Appointment slot is required</value>
+  </data>
+  <data name="APPOINTMENT_SUCCESS" xml:space="preserve">
+    <value>Appointment for Shipment {0} successfully created.  Waiting for approval to continue.</value>
+  </data>
+  <data name="APPROVAL_DOC_INVALID" xml:space="preserve">
+    <value>Documents for this approval not found</value>
+  </data>
+  <data name="APPROVAL_INVALID" xml:space="preserve">
+    <value>Approval data not found</value>
+  </data>
+  <data name="APPROVAL_LEVEL_INVALID" xml:space="preserve">
+    <value>Approval level not found</value>
+  </data>
+  <data name="APPROVAL_NEXT_INVALID" xml:space="preserve">
+    <value>Next approval level not found</value>
+  </data>
+  <data name="APPROVAL_NOT_ALLOWED" xml:space="preserve">
+    <value>Approver is not allowed to access this application</value>
+  </data>
+  <data name="APPROVAL_PROCESSED" xml:space="preserve">
+    <value>Document has been {0} by {1} on {2} </value>
+  </data>
+  <data name="ASSIGN_CUSTOMER_VENDOR_SUCCESS" xml:space="preserve">
+    <value>SAP Orders has been assigned to customer(s)/vendor(s) {0} with new Order No. {1}</value>
+  </data>
+  <data name="ASSIGN_DATE_INVALID" xml:space="preserve">
+    <value>Invalid stuffing date format</value>
+  </data>
+  <data name="ASSIGN_REASON_OTHERS_REQUIRED" xml:space="preserve">
+    <value>Additional reason is required</value>
+  </data>
+  <data name="ASSIGN_REASON_REQUIRED" xml:space="preserve">
+    <value>Reason is required</value>
+  </data>
+  <data name="ASSIGN_TRANSPORTER_SUCCESS" xml:space="preserve">
+    <value>SAP Orders has been assigned to transporter(s) {0} with new Order No. {1}</value>
+  </data>
+  <data name="BUSINESS_SEGMENT_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Business Segment</value>
+  </data>
+  <data name="BUSINESS_SEGMENT_REQUIRED" xml:space="preserve">
+    <value>Product Category is required</value>
+  </data>
+  <data name="CHANGE_PASSWORD_FIRST_LOGIN" xml:space="preserve">
+    <value>Please change your password on first login</value>
+  </data>
+  <data name="CHANGE_PASSWORD_SUCCESS_LOGIN" xml:space="preserve">
+    <value>Password has been changed. Please continue to login with new password</value>
+  </data>
+  <data name="COMPANY_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Company</value>
+  </data>
+  <data name="COMPANY_REQUIRED" xml:space="preserve">
+    <value>Company is required</value>
+  </data>
+  <data name="CONFIRM_PASSWORD_INVALID" xml:space="preserve">
+    <value>Confirm Password does not match New Password</value>
+  </data>
+  <data name="CONFIRM_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Confirm Password is required</value>
+  </data>
+  <data name="CURRENT_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Current Password is required</value>
+  </data>
+  <data name="CUSTOMER_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Customer</value>
+  </data>
+  <data name="CUSTOMER_REQUIRED" xml:space="preserve">
+    <value>Customer is required</value>
+  </data>
+  <data name="DATA_INVALID" xml:space="preserve">
+    <value>Invalid or incomplete data</value>
+  </data>
+  <data name="DEPARTMENT_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Department</value>
+  </data>
+  <data name="DEPARTMENT_REQUIRED" xml:space="preserve">
+    <value>Department is required</value>
+  </data>
+  <data name="DESTINATION_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Destination</value>
+  </data>
+  <data name="DESTINATION_REQUIRED" xml:space="preserve">
+    <value>Destination is required</value>
+  </data>
+  <data name="DISCHARGE_PORT_REQUIRED" xml:space="preserve">
+    <value>Discharge Port is required</value>
+  </data>
+  <data name="DISTRIBUTION_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Distribution</value>
+  </data>
+  <data name="DISTRIBUTION_REQUIRED" xml:space="preserve">
+    <value>Distribution is required</value>
+  </data>
+  <data name="DOCUMENT_TYPE_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Document Type</value>
+  </data>
+  <data name="DOC_DATE_REQUIRED" xml:space="preserve">
+    <value>Document Date is required</value>
+  </data>
+  <data name="DRIVER_DELETE_CONFIRMATION" xml:space="preserve">
+    <value>Are you sure to delete this driver?</value>
+  </data>
+  <data name="DRIVER_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Driver</value>
+  </data>
+  <data name="DRIVER_NOT_AVAILABLE" xml:space="preserve">
+    <value>Driver {0} is in use in other Shipment and not available at the moment</value>
+  </data>
+  <data name="DRIVER_REQUIRED" xml:space="preserve">
+    <value>Driver is required</value>
+  </data>
+  <data name="DRIVER_TRUCK_REQUIRED" xml:space="preserve">
+    <value>At least one set of driver and truck is required</value>
+  </data>
+  <data name="EMAIL_SUBJECT_APPROVED_ASSIGN_TRANSPORTER" xml:space="preserve">
+    <value>{2} {1} - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_APPROVED_CREATE_APPOINTMENT" xml:space="preserve">
+    <value>{1} APPPOINTMENT - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_APPROVE_ORDER_MANUAL" xml:space="preserve">
+    <value>{1} ORDER MANUAL - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_AUTO_REJECT" xml:space="preserve">
+    <value>AUTO REJECT ORDER - {0}</value>
+  </data>
+  <data name="EXIST_DATA" xml:space="preserve">
+    <value>{0} was added previously</value>
+  </data>
+  <data name="FREIGHT_CONTAINER_REQUIRED" xml:space="preserve">
+    <value>Container is required</value>
+  </data>
+  <data name="FREIGHT_COST_REQUIRED" xml:space="preserve">
+    <value>Freight Cost is required</value>
+  </data>
+  <data name="GROUP_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Group</value>
+  </data>
+  <data name="INCOTERM_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Incoterm</value>
+  </data>
+  <data name="INTERNAL_ERROR" xml:space="preserve">
+    <value>Internal Error: Unable to connect to application endpoint. Please contact administrator</value>
+  </data>
+  <data name="ITEM_EXCEED_OUTSTANDING" xml:space="preserve">
+    <value>Item No {0} must not exceed outstanding quantity ({1})</value>
+  </data>
+  <data name="LICENSE_REQUIRED" xml:space="preserve">
+    <value>License No. is required</value>
+  </data>
+  <data name="LOADING_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Loading</value>
+  </data>
+  <data name="LOADING_REQUIRED" xml:space="preserve">
+    <value>Loading is required</value>
+  </data>
+  <data name="LOCATION_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Location</value>
+  </data>
+  <data name="LOCATION_REQUIRED" xml:space="preserve">
+    <value>Location is required</value>
+  </data>
+  <data name="MANUAL_ORDER_GENERATE_INVALID" xml:space="preserve">
+    <value>Unable to generate Manual Order No.</value>
+  </data>
+  <data name="MATERIAL_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Material {0}</value>
+  </data>
+  <data name="MATERIAL_REQUIRED" xml:space="preserve">
+    <value>Material data is required</value>
+  </data>
+  <data name="MD_APPROVAL_MATRIX_SAVE_SUCCESS" xml:space="preserve">
+    <value>Approval Matrix has been saved successfully</value>
+  </data>
+  <data name="MD_APPT_MATRIX_SAVE_SUCCESS" xml:space="preserve">
+    <value>Appointment Matrix for factory {0} has been saved successfully</value>
+  </data>
+  <data name="MD_CUSTOMER_SAVE_SUCCESS" xml:space="preserve">
+    <value>Customer {0} has been saved successfully</value>
+  </data>
+  <data name="MD_DEPARTMENT_SAVE_SUCCESS" xml:space="preserve">
+    <value>Deparment {0} has been saved successfully</value>
+  </data>
+  <data name="MD_DOCUMENT_CATEGORY_SAVE_SUCCESS" xml:space="preserve">
+    <value>Document Category {0} has been saved successfully</value>
+  </data>
+  <data name="MD_FACTORY_SAVE_SUCCESS" xml:space="preserve">
+    <value>Factory {0} has been saved successfully</value>
+  </data>
+  <data name="MD_FREIGHT_SAVE_SUCCESS" xml:space="preserve">
+    <value>Freight Cost for {0} has been saved successfully</value>
+  </data>
+  <data name="MD_GROUP_SAVE_SUCCESS" xml:space="preserve">
+    <value>Group {0} has been saved successfully</value>
+  </data>
+  <data name="MD_INCOTERM_SAVE_SUCCESS" xml:space="preserve">
+    <value>Incoterm {0} has been saved successfully</value>
+  </data>
+  <data name="MD_LOCATION_SAVE_SUCCESS" xml:space="preserve">
+    <value>Location {0} has been saved successfully</value>
+  </data>
+  <data name="MD_LOOKUP_SAVE_SUCCESS" xml:space="preserve">
+    <value>Lookup {0} has been saved successfully</value>
+  </data>
+  <data name="MD_MATERIAL_SAVE_SUCCESS" xml:space="preserve">
+    <value>Material {0} has been saved successfully</value>
+  </data>
+  <data name="MD_PACKING_TYPE_SAVE_SUCCESS" xml:space="preserve">
+    <value>Packing Type {0} has been saved successfully</value>
+  </data>
+  <data name="MD_PURCHASE_ORG_SAVE_SUCCESS" xml:space="preserve">
+    <value>Purchase Organization {0} has been saved successfully</value>
+  </data>
+  <data name="MD_STORAGE_LOCATION_SAVE_SUCCESS" xml:space="preserve">
+    <value>Storage Location {0} has been saved successfully</value>
+  </data>
+  <data name="MD_USER_SAVE_SUCCESS" xml:space="preserve">
+    <value>User {0} has been saved successfully</value>
+  </data>
+  <data name="MD_VENDOR_SAVE_SUCCESS" xml:space="preserve">
+    <value>Vendor {0} has been saved successfully</value>
+  </data>
+  <data name="MENU_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Menu</value>
+  </data>
+  <data name="NEW_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>New Password is required</value>
+  </data>
+  <data name="NUMBER_OF_TRIP_REQUIRED" xml:space="preserve">
+    <value>Number of Trips/UOM Required</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_DENIED" xml:space="preserve">
+    <value>Order is not allowed to be added to this Shipment</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_EXISTED" xml:space="preserve">
+    <value>Order {1}, Item {2} is already added to Shipment {0}. Please edit the shipment instead of adding the Order.</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_INVALID" xml:space="preserve">
+    <value>{0} must be the same to add Order to Shipment</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been added to Shipment {1}</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_UNLOCK" xml:space="preserve">
+    <value>Please unlock this Shipment No. in WB Application</value>
+  </data>
+  <data name="ORDER_ASSIGN_DRIVER_QTY" xml:space="preserve">
+    <value>Cannot assign driver without Qty for Order {0}</value>
+  </data>
+  <data name="ORDER_ASSIGN_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been successfully assigned to driver. Please proceed to Shipment {1} to continue.</value>
+  </data>
+  <data name="ORDER_CANCEL_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been cancelled successfully.</value>
+  </data>
+  <data name="ORDER_CONFIRMATION" xml:space="preserve">
+    <value>Are you sure to {0} order {1}?</value>
+  </data>
+  <data name="ORDER_COPY_COLLECTIVE_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been successfully copied to Order {1}</value>
+  </data>
+  <data name="ORDER_COPY_COMPLETED" xml:space="preserve">
+    <value>Order {0} cannot be copied as the status is COMPLETED</value>
+  </data>
+  <data name="ORDER_DETAIL_INVALID" xml:space="preserve">
+    <value>Invalid order materials/details</value>
+  </data>
+  <data name="ORDER_DISPATCH_REJECT_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been successfully rejected. Waiting for approval to continue.</value>
+  </data>
+  <data name="ORDER_DISPATCH_STATUS_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been {1}</value>
+  </data>
+  <data name="ORDER_DISPATCH_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been successfully assigned to transporter {1}.  Waiting for approval to continue.</value>
+  </data>
+  <data name="ORDER_DISPATCH_WAITING" xml:space="preserve">
+    <value>Order {0} has been assigned to transporter {1}. Waiting for approval to assign to transporter.</value>
+  </data>
+  <data name="ORDER_EDIT_QTY_EXCEED" xml:space="preserve">
+    <value>Item {0}: Unable to Edit Order Qty. Qty already assigned to Shipment</value>
+  </data>
+  <data name="ORDER_EDIT_QTY_EXCEED_SAP" xml:space="preserve">
+    <value>Item {0}: Unable to edit Qty exceed O/S SAP Qty</value>
+  </data>
+  <data name="ORDER_EDIT_QTY_ZERO" xml:space="preserve">
+    <value>Item {0}: Unable to edit Qty to zero</value>
+  </data>
+  <data name="ORDER_EDIT_REALIZATION" xml:space="preserve">
+    <value>Unable to delete order with shipment/realization</value>
+  </data>
+  <data name="ORDER_EDIT_SUCCESS" xml:space="preserve">
+    <value>Order has been edited successfully</value>
+  </data>
+  <data name="ORDER_HAS_ONGOING_SHIPMENT" xml:space="preserve">
+    <value>Order {0} has at least one ongoing Shipment.</value>
+  </data>
+  <data name="ORDER_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Order</value>
+  </data>
+  <data name="ORDER_MARK_COMPLETE_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been marked as COMPLETED.</value>
+  </data>
+  <data name="ORDER_MERGED" xml:space="preserve">
+    <value>Order {0} has been merged/deleted on {1}</value>
+  </data>
+  <data name="ORDER_MERGE_COMPANY" xml:space="preserve">
+    <value>Merge requires 2(two) or more orders with the same company.</value>
+  </data>
+  <data name="ORDER_MERGE_COUNT" xml:space="preserve">
+    <value>Merge requires 2(two) or more orders.</value>
+  </data>
+  <data name="ORDER_MERGE_LOCATION_FROM" xml:space="preserve">
+    <value>Merge requires 2(two) or more orders with the same loading location</value>
+  </data>
+  <data name="ORDER_MERGE_LOCATION_TO" xml:space="preserve">
+    <value>Merge requires 2(two) or more orders with the same destination location</value>
+  </data>
+  <data name="ORDER_MERGE_ORDER_TYPE" xml:space="preserve">
+    <value>Merge requires 2(two) or more orders with the same order type</value>
+  </data>
+  <data name="ORDER_MERGE_QTY_INVALID" xml:space="preserve">
+    <value>Failed to merge Order {0}, SAP No {1}. Qty is required to merge.</value>
+  </data>
+  <data name="ORDER_MERGE_SHIPMENT_TYPE" xml:space="preserve">
+    <value>Merge requires 2(two) or more orders with the same shipment type.</value>
+  </data>
+  <data name="ORDER_MERGE_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been merged as Shipment {1}</value>
+  </data>
+  <data name="ORDER_MERGE_TRANSPORTER" xml:space="preserve">
+    <value>Merge requires 2(two) or more orders with the same transporter dispatched.</value>
+  </data>
+  <data name="ORDER_MERGE_TRUCK_TYPE" xml:space="preserve">
+    <value>Merge requires 2(two) or more orders with the same truck type.</value>
+  </data>
+  <data name="ORDER_NO_GENERATE_INVALID" xml:space="preserve">
+    <value>Unable to generate Order No.</value>
+  </data>
+  <data name="ORDER_NO_TRANSPORTER" xml:space="preserve">
+    <value>Order No. {0} has not been dispatched to transporter yet.</value>
+  </data>
+  <data name="ORDER_PENDING_REJECT" xml:space="preserve">
+    <value>Order {0} is on approval to be rejected</value>
+  </data>
+  <data name="ORDER_POD_FILES" xml:space="preserve">
+    <value>Upload file is required to complete Proof of Delivery</value>
+  </data>
+  <data name="ORDER_POD_INVALID" xml:space="preserve">
+    <value>POD data not found</value>
+  </data>
+  <data name="ORDER_POD_SUCCESS" xml:space="preserve">
+    <value>Proof of Delivery of Shipment {0} has been successfully saved.</value>
+  </data>
+  <data name="ORDER_REQUIRE_DISPATCH" xml:space="preserve">
+    <value>Order must be dispatched to transporter and approved</value>
+  </data>
+  <data name="ORDER_REQUIRE_DISPATCH_ACCEPTED" xml:space="preserve">
+    <value>Order must be dispatched and accepted by the transporter</value>
+  </data>
+  <data name="ORDER_SPLIT_SUCESS" xml:space="preserve">
+    <value>Order {1} has been splitted. New order number {0}</value>
+  </data>
+  <data name="ORDER_TYPE_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Order Type</value>
+  </data>
+  <data name="ORDER_UNMARK_COMPLETE_SUCCESS" xml:space="preserve">
+    <value>Order {0} sudah tidak ditandai sebagai SELESAI.</value>
+  </data>
+  <data name="PLANT_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Plant</value>
+  </data>
+  <data name="PLATE_NUMBER_INVALID" xml:space="preserve">
+    <value>Plate Number Invalid</value>
+  </data>
+  <data name="POD_CATEGORY_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted POD Category</value>
+  </data>
+  <data name="POD_CATEGORY_REQUIRED" xml:space="preserve">
+    <value>Category is required</value>
+  </data>
+  <data name="POD_FILE_EXT" xml:space="preserve">
+    <value>File {0} is not a picture. Only pictures are allowed to be uploaded.</value>
+  </data>
+  <data name="POD_MATERIAL_EXCEED" xml:space="preserve">
+    <value>POD Qty should be less than Shipment Qty [Material {0}]</value>
+  </data>
+  <data name="PUR_ORG_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Purchase Organization</value>
+  </data>
+  <data name="PUR_ORG_REQUIRED" xml:space="preserve">
+    <value>Purchase Organization is required</value>
+  </data>
+  <data name="REMARKS_REQUIRED" xml:space="preserve">
+    <value>Remarks is required</value>
+  </data>
+  <data name="SALES_ORG_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Sales Organization</value>
+  </data>
+  <data name="SALES_ORG_REQUIRED" xml:space="preserve">
+    <value>Sales Organization is required</value>
+  </data>
+  <data name="SAP_FILTER_EMPTY" xml:space="preserve">
+    <value>No data filtered</value>
+  </data>
+  <data name="STORAGE_LOCATION_PARENT_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Parent Storage Location </value>
+  </data>
+  <data name="TRANSFER_REQUIRED" xml:space="preserve">
+    <value>Transfer Type is required</value>
+  </data>
+  <data name="TRANSPORTER_EXCEED_QUOTA" xml:space="preserve">
+    <value>Transporter {0} has already exceeded the allowed quota of {1} (Current</value>
+  </data>
+  <data name="TRANSPORTER_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Transporter</value>
+  </data>
+  <data name="TRANSPORTER_NOTES_COLLECTIVE" xml:space="preserve">
+    <value>Transporter Notes for Collective can be filled in respective item(s)</value>
+  </data>
+  <data name="TRANSPORTER_QUOTA_BY_INVALID" xml:space="preserve">
+    <value>Invalid or Delete Quota By</value>
+  </data>
+  <data name="TRUCK_DELETE_CONFIRMATION" xml:space="preserve">
+    <value>Are you sure to delete this truck?</value>
+  </data>
+  <data name="TRUCK_TYPE_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Truck Type</value>
+  </data>
+  <data name="TRUCK_TYPE_REQUIRED" xml:space="preserve">
+    <value>Truck Type is required</value>
+  </data>
+  <data name="UNAUTHORIZED_TRANSPORTER" xml:space="preserve">
+    <value>Unauthorized transporter detected.</value>
+  </data>
+  <data name="USED_ON_TRANSACTION" xml:space="preserve">
+    <value>{0} with ({1}) has been used in {2} transaction</value>
+  </data>
+  <data name="USER_BLOCKED" xml:space="preserve">
+    <value>User has been blocked</value>
+  </data>
+  <data name="USER_DEACTIVATED" xml:space="preserve">
+    <value>User has been deactivated</value>
+  </data>
+  <data name="USER_DELETE_CONFIRMATION" xml:space="preserve">
+    <value>Are you sure to delete this user?</value>
+  </data>
+  <data name="USER_FORBIDDEN" xml:space="preserve">
+    <value>User is forbidden to access this application</value>
+  </data>
+  <data name="USER_INVALID" xml:space="preserve">
+    <value>User not found</value>
+  </data>
+  <data name="USER_LOCKED" xml:space="preserve">
+    <value>Account is locked. Please contact your administrator.</value>
+  </data>
+  <data name="USER_PASS_INVALID" xml:space="preserve">
+    <value>Username / Password is invalid</value>
+  </data>
+  <data name="USER_TERMINATED" xml:space="preserve">
+    <value>Account has been terminated. Please contact local IT</value>
+  </data>
+  <data name="USER_WRONG_PASSWORD" xml:space="preserve">
+    <value>Wrong password!</value>
+  </data>
+  <data name="USER_WRONG_PASSWORD_AD" xml:space="preserve">
+    <value>Wrong password. Please check your password and try again. If you enter wrong password 3 times, your account will be locked for 15 minutes.</value>
+  </data>
+  <data name="VEHICLE_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Truck</value>
+  </data>
+  <data name="VEHICLE_NOT_AVAILABLE" xml:space="preserve">
+    <value>Truck {0} is in use in other Shipment and not available at the moment</value>
+  </data>
+  <data name="VEHICLE_REQUIRED" xml:space="preserve">
+    <value>Vehicle is required</value>
+  </data>
+  <data name="VENDOR_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Vendor</value>
+  </data>
+  <data name="VENDOR_REQUIRED" xml:space="preserve">
+    <value>Vendor is required</value>
+  </data>
+  <data name="WAREHOUSE_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted Warehouse</value>
+  </data>
+  <data name="WAREHOUSE_REQUIRED" xml:space="preserve">
+    <value>Warehouse is required</value>
+  </data>
+</root>

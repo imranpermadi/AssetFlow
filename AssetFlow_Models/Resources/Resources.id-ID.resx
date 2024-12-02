@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APPOINTMENT_APPROVAL_EXPIRED" xml:space="preserve">
+    <value>Tidak dapat melakukan approval untuk appointment yang telah lewat</value>
+  </data>
+  <data name="APPOINTMENT_DATE_REQUIRED" xml:space="preserve">
+    <value>Tanggal appointment wajib di isi</value>
+  </data>
+  <data name="APPOINTMENT_SLOT_REQUIRED" xml:space="preserve">
+    <value>Slot Appointment wajib di isi</value>
+  </data>
+  <data name="APPOINTMENT_SUCCESS" xml:space="preserve">
+    <value>Appointment untuk Shipment {0} berhasil dibuat. Menunggu approval untuk melanjutkan</value>
+  </data>
+  <data name="APPROVAL_DOC_INVALID" xml:space="preserve">
+    <value>Dokumen untuk Approval tidak ditemukan</value>
+  </data>
+  <data name="APPROVAL_INVALID" xml:space="preserve">
+    <value>Approval data not found</value>
+  </data>
+  <data name="APPROVAL_LEVEL_INVALID" xml:space="preserve">
+    <value>Approval level not found</value>
+  </data>
+  <data name="APPROVAL_NEXT_INVALID" xml:space="preserve">
+    <value>Next approval level not found</value>
+  </data>
+  <data name="APPROVAL_NOT_ALLOWED" xml:space="preserve">
+    <value>Apporver tidak dapat mengakses aplikasi</value>
+  </data>
+  <data name="APPROVAL_PROCESSED" xml:space="preserve">
+    <value>Document telah di Approve {0} oleh {1} on {2} </value>
+  </data>
+  <data name="ASSIGN_CUSTOMER_VENDOR_SUCCESS" xml:space="preserve">
+    <value>SAP Order telah diberikan ke Customer/Vendor {0} dengan No. Order: {1}</value>
+  </data>
+  <data name="ASSIGN_DATE_INVALID" xml:space="preserve">
+    <value>Format tanggal muat/bongkar tidak sesuai</value>
+  </data>
+  <data name="ASSIGN_REASON_OTHERS_REQUIRED" xml:space="preserve">
+    <value>Tambahan Alasan wajib di isi</value>
+  </data>
+  <data name="ASSIGN_REASON_REQUIRED" xml:space="preserve">
+    <value>Alasan wajib di isi</value>
+  </data>
+  <data name="ASSIGN_TRANSPORTER_SUCCESS" xml:space="preserve">
+    <value>SAP Orders telah ditugaskan ke Transporter {0} dengan No Order: {1}</value>
+  </data>
+  <data name="BUSINESS_SEGMENT_INVALID" xml:space="preserve">
+    <value>Kategori Produk tidak valid atau terhapus</value>
+  </data>
+  <data name="BUSINESS_SEGMENT_REQUIRED" xml:space="preserve">
+    <value>Kategori Produk wajib diisi</value>
+  </data>
+  <data name="CHANGE_PASSWORD_FIRST_LOGIN" xml:space="preserve">
+    <value>Mohon untuk mengganti password saat login pertama kali.</value>
+  </data>
+  <data name="CHANGE_PASSWORD_SUCCESS_LOGIN" xml:space="preserve">
+    <value>Password telah berhasil diganti. Silahkan login menggunakan password baru</value>
+  </data>
+  <data name="COMPANY_INVALID" xml:space="preserve">
+    <value>Company tidak valid atau terhapus</value>
+  </data>
+  <data name="COMPANY_REQUIRED" xml:space="preserve">
+    <value>Company wajib diisi</value>
+  </data>
+  <data name="CONFIRM_PASSWORD_INVALID" xml:space="preserve">
+    <value>Konfirmasi password baru yang diisi tidak sesuai dengan password baru</value>
+  </data>
+  <data name="CONFIRM_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Konfirmasi password baru wajib diisi</value>
+  </data>
+  <data name="CURRENT_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Password lama wajib diisi</value>
+  </data>
+  <data name="CUSTOMER_INVALID" xml:space="preserve">
+    <value>Customer tidak valid atau terhapus</value>
+  </data>
+  <data name="CUSTOMER_REQUIRED" xml:space="preserve">
+    <value>Customer wajib diisi</value>
+  </data>
+  <data name="DATA_INVALID" xml:space="preserve">
+    <value>Data tidak valid atau tidak lengkap</value>
+  </data>
+  <data name="DESTINATION_INVALID" xml:space="preserve">
+    <value>Tujuan tidak valid atau terhapus</value>
+  </data>
+  <data name="DESTINATION_REQUIRED" xml:space="preserve">
+    <value>Tujuan wajib diisi</value>
+  </data>
+  <data name="DISCHARGE_PORT_REQUIRED" xml:space="preserve">
+    <value>Pelabuhan bongkar wajib diisi</value>
+  </data>
+  <data name="DISTRIBUTION_INVALID" xml:space="preserve">
+    <value>Distribusi tidak valid atau terhapus</value>
+  </data>
+  <data name="DISTRIBUTION_REQUIRED" xml:space="preserve">
+    <value>Distribution wajib diisi</value>
+  </data>
+  <data name="DOCUMENT_TYPE_INVALID" xml:space="preserve">
+    <value>Jenis dokumen tidak valid atau terhapus</value>
+  </data>
+  <data name="DOC_DATE_REQUIRED" xml:space="preserve">
+    <value>Tanggal dokumen wajib diisi</value>
+  </data>
+  <data name="DRIVER_DELETE_CONFIRMATION" xml:space="preserve">
+    <value>Apakah anda yakin untuk menghapus pengemudi tersebut?</value>
+  </data>
+  <data name="DRIVER_INVALID" xml:space="preserve">
+    <value>Pengemudi tidak valid atau terhapus</value>
+  </data>
+  <data name="DRIVER_NOT_AVAILABLE" xml:space="preserve">
+    <value>Pengemudi {0} sedang digunakan dalam Shipment lain dan tidak tersedia saat ini</value>
+  </data>
+  <data name="DRIVER_REQUIRED" xml:space="preserve">
+    <value>Pengemudi wajib diisi</value>
+  </data>
+  <data name="DRIVER_TRUCK_REQUIRED" xml:space="preserve">
+    <value>Satu atau lebih pengemudi dan truk wajib diisi</value>
+  </data>
+  <data name="EMAIL_SUBJECT_APPROVED_ASSIGN_TRANSPORTER" xml:space="preserve">
+    <value>{2} {1} - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_APPROVED_CREATE_APPOINTMENT" xml:space="preserve">
+    <value>{1} APPPOINTMENT - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_APPROVE_ORDER_MANUAL" xml:space="preserve">
+    <value>{1} ORDER MANUAL - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_AUTO_REJECT" xml:space="preserve">
+    <value>AUTO REJECT ORDER - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_CREATE_ORDER_MANUAL" xml:space="preserve">
+    <value>REQUEST APPROVAL ORDER MANUAL - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_TRANSPORTER_ACTION" xml:space="preserve">
+    <value>TRANSPORTER {1} - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_TRANSPORTER_ASSIGN_DRIVER" xml:space="preserve">
+    <value>TRANSPORTER ASSIGNED DRIVER - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_TRANSPORTER_CREATE_APPOINTMENT" xml:space="preserve">
+    <value>TRANSPORTER/DRIVER {1} APPOINTMENT - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_TRANSPORTER_REQUEST_ACTION" xml:space="preserve">
+    <value>REQUEST TRANSPORTER ACCEPT/REJECT ORDER - {0}</value>
+  </data>
+  <data name="EMAIL_SUBJECT_WAITING_APPROVAL_ASSIGN_TRANSPORTER" xml:space="preserve">
+    <value>REQUEST {1} APPROVAL - {0}</value>
+  </data>
+  <data name="FREIGHT_CONTAINER_REQUIRED" xml:space="preserve">
+    <value>Jlh. Container wajib diisi</value>
+  </data>
+  <data name="FREIGHT_COST_REQUIRED" xml:space="preserve">
+    <value>Biaya Pengiriman wajib diisi</value>
+  </data>
+  <data name="GROUP_INVALID" xml:space="preserve">
+    <value>Group tidak valid atau terhapus</value>
+  </data>
+  <data name="INCOTERM_INVALID" xml:space="preserve">
+    <value>Incoterm tidak valid atau terhapus</value>
+  </data>
+  <data name="ITEM_EXCEED_OUTSTANDING" xml:space="preserve">
+    <value>No. Item {0} tidak boleh melebihi sisa quantity ({1})</value>
+  </data>
+  <data name="LICENSE_REQUIRED" xml:space="preserve">
+    <value>No. SIM wajib di isi</value>
+  </data>
+  <data name="LOADING_INVALID" xml:space="preserve">
+    <value>Tempat muat tidak valid atau terhapus</value>
+  </data>
+  <data name="LOADING_REQUIRED" xml:space="preserve">
+    <value>Tempat muat wajib diisi</value>
+  </data>
+  <data name="LOCATION_INVALID" xml:space="preserve">
+    <value>Lokasi tidak valid atau terhapus</value>
+  </data>
+  <data name="MANUAL_ORDER_GENERATE_INVALID" xml:space="preserve">
+    <value>Tidak dapat membuat No. Manual Order baru</value>
+  </data>
+  <data name="MATERIAL_INVALID" xml:space="preserve">
+    <value>Material {0} tidak valid atau terhapus</value>
+  </data>
+  <data name="MATERIAL_REQUIRED" xml:space="preserve">
+    <value>Material data wajib di isi</value>
+  </data>
+  <data name="MD_APPROVAL_MATRIX_SAVE_SUCCESS" xml:space="preserve">
+    <value>Approval Matrix berhasil disimpan</value>
+  </data>
+  <data name="MD_APPT_MATRIX_SAVE_SUCCESS" xml:space="preserve">
+    <value>Appointment Matrix untuk pabrik {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_CUSTOMER_SAVE_SUCCESS" xml:space="preserve">
+    <value>Customer {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_FACTORY_SAVE_SUCCESS" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MD_FREIGHT_SAVE_SUCCESS" xml:space="preserve">
+    <value>Biaya Pengiriman {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_GROUP_SAVE_SUCCESS" xml:space="preserve">
+    <value>Group {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_INCOTERM_SAVE_SUCCESS" xml:space="preserve">
+    <value>Incoterm {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_MATERIAL_SAVE_SUCCESS" xml:space="preserve">
+    <value>Material {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_PLANT_SAVE_SUCCESS" xml:space="preserve">
+    <value>Plant {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_PURCHASE_ORG_SAVE_SUCCESS" xml:space="preserve">
+    <value>Purchase Organization {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_SALES_ORG_SAVE_SUCCESS" xml:space="preserve">
+    <value>Sales Organization {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_TRUCK_TYPE_SAVE_SUCCESS" xml:space="preserve">
+    <value>Tipe Truck {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_USER_SAVE_SUCCESS" xml:space="preserve">
+    <value>User {0} berhasil disimpan</value>
+  </data>
+  <data name="MD_VENDOR_SAVE_SUCCESS" xml:space="preserve">
+    <value>Vendor {0} berhasil disimpan</value>
+  </data>
+  <data name="MENU_INVALID" xml:space="preserve">
+    <value>Menu tidak valid atau terhapus</value>
+  </data>
+  <data name="NEW_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Password baru wajib diisi</value>
+  </data>
+  <data name="NUMBER_OF_TRIP_REQUIRED" xml:space="preserve">
+    <value>Number of Trips/UOM  wajib diisi</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_DENIED" xml:space="preserve">
+    <value>Order {0} tidak dapat ditambahkan ke Shipment {1}</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_EXISTED" xml:space="preserve">
+    <value>Order {1}, Item {2} sudah ditambahkan ke Shipment {0}. Silahkan menggunakan fitur edit shipment untuk mengubah data shipment</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_INVALID" xml:space="preserve">
+    <value>{0} Kriteria harus sama untuk menambahkan Order ke Shipment</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_SUCCESS" xml:space="preserve">
+    <value>Order {0} telah ditambahkan ke Shipment {1}</value>
+  </data>
+  <data name="ORDER_ADD_SHIPMENT_UNLOCK" xml:space="preserve">
+    <value>Mohon unlock Shipment No. {0} pada Aplikasi WB</value>
+  </data>
+  <data name="ORDER_ASSIGN_DRIVER_QTY" xml:space="preserve">
+    <value>Tidak dapat menugaskan driver tanpa Qty pada Order</value>
+  </data>
+  <data name="ORDER_ASSIGN_SUCCESS" xml:space="preserve">
+    <value>Order {0} telah berhasil ditetapkan ke pengemudi. Lihat Shipment {1} untuk melanjutkan.</value>
+  </data>
+  <data name="ORDER_CANCEL_SUCCESS" xml:space="preserve">
+    <value>Order {0} berhasil di batalkan</value>
+  </data>
+  <data name="ORDER_CONFIRMATION" xml:space="preserve">
+    <value>Apakah anda yakin untuk {0} order {1}?</value>
+  </data>
+  <data name="ORDER_COPY_COLLECTIVE_SUCCESS" xml:space="preserve">
+    <value>Order {0} telah berhasil di salin ke  Order {1}</value>
+  </data>
+  <data name="ORDER_COPY_COMPLETED" xml:space="preserve">
+    <value>Order {0} dengan status COMPLETED tidak dapat di salin</value>
+  </data>
+  <data name="ORDER_DETAIL_INVALID" xml:space="preserve">
+    <value>Order material/detail tidak valid</value>
+  </data>
+  <data name="ORDER_DISPATCH_REJECT_SUCCESS" xml:space="preserve">
+    <value>Order {0} berhasil ditolak</value>
+  </data>
+  <data name="ORDER_DISPATCH_STATUS_SUCCESS" xml:space="preserve">
+    <value>Order {0} telah {1}</value>
+  </data>
+  <data name="ORDER_DISPATCH_SUCCESS" xml:space="preserve">
+    <value>Order {0} berhasil ditugaskan ke Transporter {1}. Menunggu Appproval untuk melanjutkan</value>
+  </data>
+  <data name="ORDER_DISPATCH_WAITING" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ORDER_EDIT_QTY_EXCEED" xml:space="preserve">
+    <value>Item {0}: Tidak bisa edit Qty Order. Qty sudah ditugaskan ke Shipment</value>
+  </data>
+  <data name="ORDER_EDIT_QTY_EXCEED_SAP" xml:space="preserve">
+    <value>Item {0}: Tidak dapat edit melebihi O/S Qty SAP</value>
+  </data>
+  <data name="ORDER_EDIT_QTY_ZERO" xml:space="preserve">
+    <value>Item {0}: Tidak dapat edit Qty ke nol</value>
+  </data>
+  <data name="ORDER_EDIT_REALIZATION" xml:space="preserve">
+    <value>Tidak dapat menghapus order dengan shipment/realisasi</value>
+  </data>
+  <data name="ORDER_EDIT_SUCCESS" xml:space="preserve">
+    <value>Order berhasil diedit</value>
+  </data>
+  <data name="ORDER_HAS_ONGOING_SHIPMENT" xml:space="preserve">
+    <value>Order {0} mempunyai satu atau lebih Shipment yang sedang berlangsung</value>
+  </data>
+  <data name="ORDER_INVALID" xml:space="preserve">
+    <value>Order tidak valid atau terhapus</value>
+  </data>
+  <data name="ORDER_MARK_COMPLETE_SUCCESS" xml:space="preserve">
+    <value>Order {0} telah ditandai SELESAI</value>
+  </data>
+  <data name="ORDER_MERGED" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ORDER_MERGE_COMPANY" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ORDER_MERGE_COUNT" xml:space="preserve">
+    <value>Merge membutuhkan 2(dua) or atau lebih order</value>
+  </data>
+  <data name="ORDER_MERGE_LOCATION_FROM" xml:space="preserve">
+    <value>Merge membutuhkan 2 (dua) atau lebih order dengan tempat muat yang sama</value>
+  </data>
+  <data name="ORDER_MERGE_LOCATION_TO" xml:space="preserve">
+    <value>Merge membutuhkan 2 (dua) atau lebih order dengan tujuan yang sama</value>
+  </data>
+  <data name="ORDER_MERGE_ORDER_TYPE" xml:space="preserve">
+    <value>Merge membutuhkan 2 (dua) atau lebih order dengan tipe order yang sama</value>
+  </data>
+  <data name="ORDER_MERGE_QTY_INVALID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ORDER_MERGE_SHIPMENT_TYPE" xml:space="preserve">
+    <value>Merge membutuhkan 2 (dua) atau lebih order dengan tipe shipment yang sama</value>
+  </data>
+  <data name="ORDER_MERGE_SUCCESS" xml:space="preserve">
+    <value>Order {0} berhasil digabung ke Shipment {1}</value>
+  </data>
+  <data name="ORDER_MERGE_TRANSPORTER" xml:space="preserve">
+    <value>Merge membutuhkan 2 (dua) atau lebih order dengan transporter yang sama</value>
+  </data>
+  <data name="ORDER_MERGE_TRUCK_TYPE" xml:space="preserve">
+    <value>Merge membutuhkan 2 (dua) atau lebih order dengan tipe truck yang sama</value>
+  </data>
+  <data name="ORDER_NO_GENERATE_INVALID" xml:space="preserve">
+    <value>Tidak dapat membuat No. Order baru</value>
+  </data>
+  <data name="ORDER_NO_TRANSPORTER" xml:space="preserve">
+    <value>Order {0} belum ditugaskan ke transporter</value>
+  </data>
+  <data name="ORDER_PENDING_REJECT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ORDER_POD_FILES" xml:space="preserve">
+    <value>File Gambar wajib diisi untuk melakukan POD</value>
+  </data>
+  <data name="ORDER_POD_INVALID" xml:space="preserve">
+    <value>Data POD tidak ditemukan</value>
+  </data>
+  <data name="ORDER_POD_SUCCESS" xml:space="preserve">
+    <value>POD Shipment {0} telah berhasil disimpan</value>
+  </data>
+  <data name="ORDER_REQUIRE_DISPATCH" xml:space="preserve">
+    <value>Order harus ditugaskan ke transporter dan telah diapprove.</value>
+  </data>
+  <data name="ORDER_REQUIRE_DISPATCH_ACCEPTED" xml:space="preserve">
+    <value>Order harus ditugaskan dan sudah diterima oleh transporter</value>
+  </data>
+  <data name="ORDER_SPLIT_SUCESS" xml:space="preserve">
+    <value>Order {1}  berhasil di split dengan No Order {0}</value>
+  </data>
+  <data name="ORDER_TYPE_INVALID" xml:space="preserve">
+    <value>Jenis Order tidak valid atau terhapus</value>
+  </data>
+  <data name="ORDER_UNMARK_COMPLETE_SUCCESS" xml:space="preserve">
+    <value>Order {0} has been unmarked as COMPLETED.</value>
+  </data>
+  <data name="PLANT_INVALID" xml:space="preserve">
+    <value>Plant tidak valid atau terhapus</value>
+  </data>
+  <data name="PLATE_NUMBER_INVALID" xml:space="preserve">
+    <value>Nomor polisi tidak valid</value>
+  </data>
+  <data name="POD_CATEGORY_INVALID" xml:space="preserve">
+    <value>Kategori POD tidak valid atau terhapus</value>
+  </data>
+  <data name="POD_CATEGORY_REQUIRED" xml:space="preserve">
+    <value>Kategori POD wajib diisi</value>
+  </data>
+  <data name="POD_FILE_EXT" xml:space="preserve">
+    <value>File {0} bukan gambar. Hanya file dengan tipe gambar yang diperbolehkan untuk diupload</value>
+  </data>
+  <data name="POD_MATERIAL_EXCEED" xml:space="preserve">
+    <value>Qty POD tidak boleh melebihi Qty Shipment [Material {0}]</value>
+  </data>
+  <data name="PUR_ORG_INVALID" xml:space="preserve">
+    <value>Purchase Organization tidak valid atau terhapus</value>
+  </data>
+  <data name="PUR_ORG_REQUIRED" xml:space="preserve">
+    <value>Purchase Organization wajib di isi</value>
+  </data>
+  <data name="REMARKS_REQUIRED" xml:space="preserve">
+    <value>Remarks wajib di isi</value>
+  </data>
+  <data name="SALES_ORG_INVALID" xml:space="preserve">
+    <value>Sales Organization tidak valid atau terhapus</value>
+  </data>
+  <data name="SALES_ORG_REQUIRED" xml:space="preserve">
+    <value>Sales Organization wajib diisi</value>
+  </data>
+  <data name="SAP_FILTER_EMPTY" xml:space="preserve">
+    <value>Tidak ada data yang difilter</value>
+  </data>
+  <data name="SAP_FILTER_MULESOFT_UNREACHABLE" xml:space="preserve">
+    <value>Unable to connect to mulesoft server</value>
+  </data>
+  <data name="SAP_FILTER_UNREACHABLE" xml:space="preserve">
+    <value>SAP tidak merespons dalam rentang waktu yang ditentukan</value>
+  </data>
+  <data name="SAP_NO_REQUIRED" xml:space="preserve">
+    <value>SAP No wajib diisi</value>
+  </data>
+  <data name="SAP_ORDER_ASSIGN_SUCCESS" xml:space="preserve">
+    <value>SAP Order {0} telah berhasil ditugaskan ke  transporter {1} dengan No. Order {2}</value>
+  </data>
+  <data name="SAP_ORDER_CANCEL_SUCCESS" xml:space="preserve">
+    <value>SAP Order {0} berhasil dibatalkan</value>
+  </data>
+  <data name="SAP_ORDER_CONVERTED" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SAP_ORDER_CREATE_SUCCESS" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SAP_ORDER_DETAIL_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted SAP Order Detail</value>
+  </data>
+  <data name="SAP_ORDER_INVALID" xml:space="preserve">
+    <value>Invalid or Deleted SAP Order</value>
+  </data>
+  <data name="SAP_ORDER_NOT_AUTHORIZED" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="SHIPMENT_CANCEL_CONFIRMATION" xml:space="preserve">
+    <value>Apakah anda yakin untuk membatalkan Shipment {0}?</value>
+  </data>
+  <data name="SHIPMENT_CANCEL_SUCCESS" xml:space="preserve">
+    <value>Shipment {0} telah berhasil dibatalkan</value>
+  </data>
+  <data name="SHIPMENT_DETAIL_INVALID" xml:space="preserve">
+    <value>Data detail Shipment tidak ditemukan</value>
+  </data>
+  <data name="SHIPMENT_DRIVER_INVALID" xml:space="preserve">
+    <value>Data pengemudi Shipment tidak ditemukan</value>
+  </data>
+  <data name="SHIPMENT_EDIT_DRIVER_INVALID" xml:space="preserve">
+    <value>Pengemudi dan Truck tidak ditemukan</value>
+  </data>
+  <data name="SHIPMENT_EDIT_DRIVER_REQUIRED" xml:space="preserve">
+    <value>Harus isi minimal 1 atau lebih pengemudi</value>
+  </data>
+  <data name="SHIPMENT_EDIT_DRIVER_SUCCESS" xml:space="preserve">
+    <value>Pengemudi dan Truk Shipment {0} telah berhasil diganti</value>
+  </data>
+  <data name="SHIPMENT_INVALID" xml:space="preserve">
+    <value>Shipment tidak valid atau terhapus</value>
+  </data>
+  <data name="SHIPMENT_NO_GENERATE_FAILED" xml:space="preserve">
+    <value>Tidak dapat membuat No. Shipment baru</value>
+  </data>
+  <data name="SHIPMENT_NO_REQUIRED" xml:space="preserve">
+    <value>Shipment No. wajib diisi</value>
+  </data>
+  <data name="SHIPMENT_PENDING_REJECT" xml:space="preserve">
+    <value>Shipment {0} sedang dalam approval untuk ditolak</value>
+  </data>
+  <data name="SHIPMENT_REGISTERED_IN" xml:space="preserve">
+    <value>Shipment telah terdaftar di pabrik</value>
+  </data>
+  <data name="SHIPMENT_RETURN_INVALID" xml:space="preserve">
+    <value>Return Shipment No. has not been created for this Shipment. </value>
+  </data>
+  <data name="SHIPMENT_RETURN_SUCCESS" xml:space="preserve">
+    <value>Shipment Return {0} terlah berhasil dibuat dari Shipment {1}</value>
+  </data>
+  <data name="SHIPMENT_TRACKING_NOT_FOUND" xml:space="preserve">
+    <value>Tidak terdapat data tracking untuk shipment ini</value>
+  </data>
+  <data name="SHIPMENT_TYPE_INVALID" xml:space="preserve">
+    <value>Jenis shipment tidak valid atau terhapus</value>
+  </data>
+  <data name="SHIPMENT_TYPE_REQUIRED" xml:space="preserve">
+    <value>Shipment Type wajib diisi</value>
+  </data>
+  <data name="STUFFING_DATE_FROM_REQUIRED" xml:space="preserve">
+    <value>Tanggal muat/bongkar wajib diisi</value>
+  </data>
+  <data name="STUFFING_DATE_RANGE_INVALID" xml:space="preserve">
+    <value>Range tanggal muat/bongkar tidak sesuai</value>
+  </data>
+  <data name="STUFFING_DATE_TO_REQUIRED" xml:space="preserve">
+    <value>Tanggal muat/bongkar wajib diisi</value>
+  </data>
+  <data name="TRANSFER_REQUIRED" xml:space="preserve">
+    <value>Tipe transfer wajib diisi</value>
+  </data>
+  <data name="TRANSPORTER_EXCEED_QUOTA" xml:space="preserve">
+    <value>Transporter {0} telah melebihi kuota {1} (Saat ini</value>
+  </data>
+  <data name="TRANSPORTER_INVALID" xml:space="preserve">
+    <value>Transporter tidak valid atau terhapus</value>
+  </data>
+  <data name="TRANSPORTER_NOTES_COLLECTIVE" xml:space="preserve">
+    <value>Pengisian catatan untuk Transporter dapat diisi pada kolom sebelah kanan per Transporter</value>
+  </data>
+  <data name="TRANSPORTER_QUOTA_BY_INVALID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TRUCK_DELETE_CONFIRMATION" xml:space="preserve">
+    <value>Apakah anda yakin untuk menghapus truk tersebut?</value>
+  </data>
+  <data name="TRUCK_TYPE_INVALID" xml:space="preserve">
+    <value>Jenis truk tidak valid atau terhapus</value>
+  </data>
+  <data name="TRUCK_TYPE_REQUIRED" xml:space="preserve">
+    <value>Jenis truk wajib diisi</value>
+  </data>
+  <data name="UNAUTHORIZED_TRANSPORTER" xml:space="preserve">
+    <value>Unauthorized transporter detected.</value>
+  </data>
+  <data name="USER_BLOCKED" xml:space="preserve">
+    <value>User telah terblokir</value>
+  </data>
+  <data name="USER_DEACTIVATED" xml:space="preserve">
+    <value>User telah dinonaktifkan</value>
+  </data>
+  <data name="USER_DELETE_CONFIRMATION" xml:space="preserve">
+    <value>Apakah anda yakin untuk menghapus user ini?</value>
+  </data>
+  <data name="USER_FORBIDDEN" xml:space="preserve">
+    <value>User dilarang untuk mengakses aplikasi ini</value>
+  </data>
+  <data name="USER_INVALID" xml:space="preserve">
+    <value>User tidak ditemukan</value>
+  </data>
+  <data name="USER_LOCKED" xml:space="preserve">
+    <value>Akun terkunci. Silahkan hubungi administrator anda.</value>
+  </data>
+  <data name="USER_PASS_INVALID" xml:space="preserve">
+    <value>Username / Password yang anda masukkan salah</value>
+  </data>
+  <data name="USER_TERMINATED" xml:space="preserve">
+    <value>User anda sudah ditermasi. Mohon hubungi IT setempat</value>
+  </data>
+  <data name="USER_WRONG_PASSWORD" xml:space="preserve">
+    <value>Password salah!</value>
+  </data>
+  <data name="USER_WRONG_PASSWORD_AD" xml:space="preserve">
+    <value>Password salah. Silahkan cek password anda dan coba lagi. Jika anda salah password sebanyak 3 kali, maka user anda akan di locked selama 15 Menit</value>
+  </data>
+  <data name="VEHICLE_INVALID" xml:space="preserve">
+    <value>Truk tidak valid atau terhapus</value>
+  </data>
+  <data name="VEHICLE_NOT_AVAILABLE" xml:space="preserve">
+    <value>Truk {0} sedang digunakan dalam Shipment lain dan tidak tersedia saat ini</value>
+  </data>
+  <data name="VEHICLE_REQUIRED" xml:space="preserve">
+    <value>Truk wajib diisi</value>
+  </data>
+  <data name="VENDOR_INVALID" xml:space="preserve">
+    <value>Vendor tidak valid atau terhapus</value>
+  </data>
+  <data name="VENDOR_REQUIRED" xml:space="preserve">
+    <value>Vendor wajib diisi</value>
+  </data>
+  <data name="WAREHOUSE_INVALID" xml:space="preserve">
+    <value>Factory tidak valid atau terhapus</value>
+  </data>
+  <data name="WAREHOUSE_REQUIRED" xml:space="preserve">
+    <value>Factory wajib diisi</value>
+  </data>
+  <data name="WB_INVALID_REGISTRATION_DATE" xml:space="preserve">
+    <value>Nomor Shipment tidak dapat digunakan (Tanggal Registrasi telah melewati dari tanggal valid Shipment/Order) \n {0} Mohon dilakukan pengecekan dan konfirmasi kembali dengan pihak logistik atau expedisi</value>
+  </data>
+  <data name="WB_TRANS_TYPE_INVALID" xml:space="preserve">
+    <value>WB Trans Type tidak valid atau terhapus</value>
+  </data>
+</root>

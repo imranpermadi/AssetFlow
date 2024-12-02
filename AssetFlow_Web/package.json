@@ -1,0 +1,54 @@
+{
+	"name": "pbv",
+	"version": "3.3.0",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/primefaces/sigma-vue.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"serve": "vue-cli-service serve --host localhost",
+		"local": "vue-cli-service serve --host localhost --mode local",
+		"build": "vite build",
+		"qa": "vue-cli-service build --mode qa",
+		"prd": "vue-cli-service build --mode production",
+		"qa-local": "vue-cli-service build --mode qa --dest '/Users/stenleyteh/Desktop/Projects/Windows/ITMGitPublish/ITM_Vue'",
+		"lint": "vue-cli-service lint",
+		"test:unit": "vue-cli-service test:unit",
+		"dev": "vite"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.0.5",
+		"@vue/compiler-sfc": "^3.0.0",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^6.7.2",
+		"eslint-plugin-vue": "^7.0.0",
+		"sass": "^1.45.0",
+		"sass-loader": "^8.0.2",
+		"vite": "^5.3.1"
+	},
+	"dependencies": {
+		"@googlemaps/js-api-loader": "^1.14.3",
+		"@vuelidate/core": "2.0.0-alpha.16",
+		"@vuelidate/validators": "2.0.0-alpha.13",
+		"axios": "0.28.0",
+		"chart.js": "3.3.2",
+		"core-js": "^3.6.5",
+		"es6-promise": "^4.2.8",
+		"html2pdf.js": "^0.10.1",
+		"moment": "^2.29.1",
+		"plotly.js-dist": "^2.18.0",
+		"primeflex": "3.0.0",
+		"primeicons": "5.0.0",
+		"primevue": "3.7.1",
+		"prismjs": "1.9.0",
+		"vue": "3.2.25",
+		"vue-client-recaptcha": "1.0.5",
+		"vue-html-to-paper": "2.0.3",
+		"vue-i18n": "9.13.1",
+		"vue-router": "^4.0.0-0",
+		"vuex": "4.0.0",
+		"vuex-persistedstate": "4.1.0"
+	}
+}

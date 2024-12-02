@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1ad3f40daa084714acd294adb1af0a56" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="FAMSModel.APISetting" Width="1.5" PointX="0.75" PointY="3.625" />
+        <EntityTypeShape EntityType="FAMSModel.Approval" Width="1.5" PointX="6" PointY="45.25" />
+        <EntityTypeShape EntityType="FAMSModel.ApprovalDetail" Width="1.5" PointX="8.25" PointY="46.875" />
+        <EntityTypeShape EntityType="FAMSModel.ApprovalDocument" Width="1.5" PointX="8.25" PointY="44.5" />
+        <EntityTypeShape EntityType="FAMSModel.Asset" Width="1.5" PointX="13.75" PointY="14.625" />
+        <EntityTypeShape EntityType="FAMSModel.CertificateType" Width="1.5" PointX="8.75" PointY="13.625" />
+        <EntityTypeShape EntityType="FAMSModel.Changelog" Width="1.5" PointX="13.75" PointY="9.875" />
+        <EntityTypeShape EntityType="FAMSModel.ChangelogDetail" Width="1.5" PointX="16" PointY="9.875" />
+        <EntityTypeShape EntityType="FAMSModel.Department" Width="1.5" PointX="8.75" PointY="17.625" />
+        <EntityTypeShape EntityType="FAMSModel.Group" Width="1.5" PointX="0.75" PointY="10.375" />
+        <EntityTypeShape EntityType="FAMSModel.GroupMenu" Width="1.5" PointX="6" PointY="6" />
+        <EntityTypeShape EntityType="FAMSModel.Localization" Width="1.5" PointX="15.75" PointY="14.625" />
+        <EntityTypeShape EntityType="FAMSModel.LocationSAP" Width="1.5" PointX="15.75" PointY="19.625" />
+        <EntityTypeShape EntityType="FAMSModel.Lookup" Width="1.5" PointX="17.75" PointY="14.625" />
+        <EntityTypeShape EntityType="FAMSModel.Menu" Width="1.5" PointX="3.75" PointY="19.75" />
+        <EntityTypeShape EntityType="FAMSModel.Module" Width="1.5" PointX="4.25" PointY="39.5" />
+        <EntityTypeShape EntityType="FAMSModel.ModuleDocument" Width="1.5" PointX="11.75" PointY="16.625" />
+        <EntityTypeShape EntityType="FAMSModel.ModuleTask" Width="1.5" PointX="6.5" PointY="39.375" />
+        <EntityTypeShape EntityType="FAMSModel.ModuleTaskDetail" Width="1.5" PointX="8.75" PointY="39.25" />
+        <EntityTypeShape EntityType="FAMSModel.ModuleType" Width="1.5" PointX="6.5" PointY="34.5" />
+        <EntityTypeShape EntityType="FAMSModel.ModuleTypeDetail" Width="1.5" PointX="8.75" PointY="34" />
+        <EntityTypeShape EntityType="FAMSModel.NotificationLog" Width="1.5" PointX="17.75" PointY="19.625" />
+        <EntityTypeShape EntityType="FAMSModel.ReleaseMatrix" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FAMSModel.ReleaseMatrixDetail" Width="1.5" PointX="6" PointY="16.25" />
+        <EntityTypeShape EntityType="FAMSModel.Request" Width="1.5" PointX="8.75" PointY="21.25" />
+        <EntityTypeShape EntityType="FAMSModel.RequestAttachment" Width="1.5" PointX="14" PointY="24.5" />
+        <EntityTypeShape EntityType="FAMSModel.RequestDetail" Width="1.5" PointX="11" PointY="28.75" />
+        <EntityTypeShape EntityType="FAMSModel.RequestLog" Width="1.5" PointX="13.75" PointY="4.375" />
+        <EntityTypeShape EntityType="FAMSModel.RequestLogDetail" Width="1.5" PointX="16" PointY="3.875" />
+        <EntityTypeShape EntityType="FAMSModel.RequestTask" Width="1.5" PointX="11" PointY="23" />
+        <EntityTypeShape EntityType="FAMSModel.Role" Width="1.5" PointX="3.75" PointY="6.375" />
+        <EntityTypeShape EntityType="FAMSModel.RunningNumber" Width="1.5" PointX="8.75" PointY="6" />
+        <EntityTypeShape EntityType="FAMSModel.RunningNumberDate" Width="1.5" PointX="11" PointY="4" />
+        <EntityTypeShape EntityType="FAMSModel.RunningNumberMonth" Width="1.5" PointX="11" PointY="7.125" />
+        <EntityTypeShape EntityType="FAMSModel.RunningNumberYear" Width="1.5" PointX="11" PointY="10.125" />
+        <EntityTypeShape EntityType="FAMSModel.Setting" Width="1.5" PointX="0.75" PointY="7.625" />
+        <EntityTypeShape EntityType="FAMSModel.UoM" Width="1.5" PointX="18.75" PointY="3.625" />
+        <EntityTypeShape EntityType="FAMSModel.User" Width="1.5" PointX="0.75" PointY="15.125" />
+        <EntityTypeShape EntityType="FAMSModel.UserCompany" Width="1.5" PointX="3" PointY="31.625" />
+        <EntityTypeShape EntityType="FAMSModel.UserDepartment" Width="1.5" PointX="3" PointY="15.75" />
+        <EntityTypeShape EntityType="FAMSModel.UserGroup" Width="1.5" PointX="3" PointY="11.375" />
+        <EntityTypeShape EntityType="FAMSModel.UserLocation" Width="1.5" PointX="3" PointY="23.75" />
+        <EntityTypeShape EntityType="FAMSModel.UserPassLog" Width="1.5" PointX="3" PointY="35.5" />
+        <EntityTypeShape EntityType="FAMSModel.UserRole" Width="1.5" PointX="6" PointY="11.375" />
+        <EntityTypeShape EntityType="FAMSModel.UserToken" Width="1.5" PointX="18.75" PointY="7.625" />
+        <AssociationConnector Association="FAMSModel.FK_Approval_ReleaseMatrix" />
+        <AssociationConnector Association="FAMSModel.FK_ApprovalDetail_Approval" />
+        <AssociationConnector Association="FAMSModel.FK_ApprovalDocument_Approval" />
+        <AssociationConnector Association="FAMSModel.FK_ChangelogDetail_Changelog" />
+        <AssociationConnector Association="FAMSModel.FK_Group_Menu_Group" />
+        <AssociationConnector Association="FAMSModel.FK_Table_1_Group" />
+        <AssociationConnector Association="FAMSModel.FK_Group_Menu_Menu" />
+        <AssociationConnector Association="FAMSModel.FK_ModuleDocument_Module" />
+        <AssociationConnector Association="FAMSModel.FK_ModuleTask_Module" />
+        <AssociationConnector Association="FAMSModel.FK_ModuleType_Module" />
+        <AssociationConnector Association="FAMSModel.FK_RequestAttachment_ModuleDocument" />
+        <AssociationConnector Association="FAMSModel.FK_ModuleTaskDetail_ModuleTask" />
+        <AssociationConnector Association="FAMSModel.FK_RequestTask_ModuleTaskDetail" />
+        <AssociationConnector Association="FAMSModel.FK_ModuleTypeDetail_ModuleType" />
+        <AssociationConnector Association="FAMSModel.FK__Release_D__Relea__1BC821DD" />
+        <AssociationConnector Association="FAMSModel.FK__Release_D__User___1CBC4616" />
+        <AssociationConnector Association="FAMSModel.FK_RequestAttachment_Request" />
+        <AssociationConnector Association="FAMSModel.FK_RequestDetail_Request" />
+        <AssociationConnector Association="FAMSModel.FK_RequestTask_Request" />
+        <AssociationConnector Association="FAMSModel.FK_RequestLogDetail_RequestLog" />
+        <AssociationConnector Association="FAMSModel.FK_User_Role_Role" />
+        <AssociationConnector Association="FAMSModel.FK_RunningNumberDate_RunningNumber" />
+        <AssociationConnector Association="FAMSModel.FK_RunningNumberMonth_RunningNumber" />
+        <AssociationConnector Association="FAMSModel.FK_RunningNumberYear_RunningNumber" />
+        <AssociationConnector Association="FAMSModel.FK_Table_1_User" />
+        <AssociationConnector Association="FAMSModel.FK_User_Pass_Log_User" />
+        <AssociationConnector Association="FAMSModel.FK_User_Role_User" />
+        <AssociationConnector Association="FAMSModel.FK_UserCompany_User" />
+        <AssociationConnector Association="FAMSModel.FK_UserDepartment_User" />
+        <AssociationConnector Association="FAMSModel.FK_UserLocation_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

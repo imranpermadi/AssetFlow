@@ -1,0 +1,118 @@
+trigger:
+  branches:
+    include:
+    - release
+    - release-qa
+    - release-dev
+variables:
+- name: projectName
+  value: 'FAMS'
+- name: projectDirectoryIAPI
+  value: '$(projectName)_API'
+- name: projectDirectoryPAPI
+  value: '$(projectName)_Public_API'
+- name: projectDirectoryService
+  value: '$(projectName)_Service'
+- name: projectDirectoryScheduler
+  value: '$(projectName)_Scheduler'
+- name: solution
+  value: '**/*.sln'
+- name: sourceBranch
+  value: $[replace(variables['Build.SourceBranch'], 'refs/heads/', '')]
+- name: publishUrl
+  value: '$(System.DefaultWorkingDirectory)\Publish'
+- name: publishPathIAPI
+  value: '$(publishUrl)\build\$(projectDirectoryIAPI)'
+- name: publishPathPAPI
+  value: '$(publishUrl)\build\$(projectDirectoryPAPI)'
+- name: publishPathService
+  value: '$(publishUrl)\build\$(projectDirectoryService)'
+- name: publishPathScheduler
+  value: '$(publishUrl)\build\$(projectDirectoryScheduler)'
+- name: zipPath
+  value: '$(publishUrl)\packages'
+- name: zipFileNameIAPI
+  value: 'output-private-api.zip'
+- name: zipFileNamePAPI
+  value: 'output-public-api.zip'
+- name: zipFileNameService
+  value: 'output-service.zip'
+- name: zipFileNameScheduler
+  value: 'output-scheduler.zip'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: buildConfiguration
+  value: 'Release'
+stages:
+- stage: __default
+  jobs:
+  - job: Job
+    pool:
+      name: 'FAOAgentPool'
+    steps:
+    - task: NuGetToolInstaller@1
+    - task: NuGetCommand@2
+      inputs:
+        restoreSolution: '$(solution)'
+    - task: MSBuild@1
+      inputs:
+        solution: '**/$(projectDirectoryIAPI)/$(projectDirectoryIAPI).csproj'
+        msbuildArchitecture: 'x64'
+        msbuildArguments: '/p:DeployOnBuild=true /p:publishUrl="$(publishPathIAPI)"'
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: '$(publishPathIAPI)'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(zipPath)/$(zipFileNameIAPI)'
+        replaceExistingArchive: true
+    - task: MSBuild@1
+      inputs:
+        solution: '**/$(projectDirectoryPAPI)/$(projectDirectoryPAPI).csproj'
+        msbuildArchitecture: 'x64'
+        msbuildArguments: '/p:DeployOnBuild=true /p:publishUrl="$(publishPathPAPI)"'
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: '$(publishPathPAPI)'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(zipPath)/$(zipFileNamePAPI)'
+        replaceExistingArchive: true
+    - task: MSBuild@1
+      inputs:
+        solution: '**/$(projectDirectoryService)/$(projectDirectoryService).csproj'
+        msbuildArchitecture: 'x64'
+        msbuildArguments: '/p:DeployOnBuild=true /p:OutputPath="$(publishPathService)"'
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: '$(publishPathService)'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(zipPath)/$(zipFileNameService)'
+        replaceExistingArchive: true
+    - task: MSBuild@1
+      inputs:
+        solution: '**/$(projectDirectoryScheduler)/$(projectDirectoryScheduler).csproj'
+        msbuildArchitecture: 'x64'
+        msbuildArguments: '/p:DeployOnBuild=true /p:OutputPath="$(publishPathScheduler)"'
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: '$(publishPathScheduler)'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(zipPath)/$(zipFileNameScheduler)'
+        replaceExistingArchive: true
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(zipPath)'
+        artifact: 'output-$(sourceBranch)'
+        publishLocation: 'pipeline'
+
